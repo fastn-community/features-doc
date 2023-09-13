@@ -1,0 +1,104 @@
+-- import: fastn-community.github.io/features-doc/data
+
+
+-- component feature-helper:
+caption title:
+optional body subtitle:
+data.feature list feature-list:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 55
+align-content: center
+
+-- ftd.column:
+align-content: center
+width: fill-container
+spacing.fixed.px: 16
+
+-- ftd.text: $feature-helper.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+text-align: center
+
+-- ftd.text:
+if: { feature-helper.subtitle!= NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+text-align: center
+max-width.fixed.percent: 80
+
+$feature-helper.subtitle
+
+-- end: ftd.column
+
+-- ftd.row:
+margin-top.px: 96
+width: fill-container
+wrap: true
+spacing.fixed.px: 60
+align-content: center
+
+-- feature-helper-details:
+$loop$: $feature-helper.feature-list as $obj
+title: $obj.title
+icon: $obj.icon
+subtitle: $obj.subtitle
+link: $obj.link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: feature-helper
+
+
+
+
+
+
+
+
+
+
+-- component feature-helper-details:
+caption title: 
+optional ftd.image-src icon:
+body subtitle:
+optional string link:
+
+-- ftd.column:
+width.fixed.percent: 45
+width if { ftd.device == "mobile"}: fill-container
+border-width.px: 1
+border-color: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.step-2
+padding.px: 40
+border-radius.px: 10
+link if { feature-helper-details.link != NULL }: $feature-helper-details.link
+
+-- ftd.image:
+if: { feature-helper-details.icon != NULL }
+src: $feature-helper-details.icon
+width: auto
+margin-bottom.px: 24
+
+-- ftd.text: $feature-helper-details.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+margin-bottom.px: 8
+style: bold
+
+-- ftd.text:
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+$feature-helper-details.subtitle
+
+-- end: ftd.column
+
+-- end: feature-helper-details
+
+
+
+
