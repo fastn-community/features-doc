@@ -1,0 +1,24 @@
+-- import: fastn-community.github.io/features-doc/data
+-- import: fastn-community.github.io/features-doc/docs
+-- import: fastn-community.github.io/features-doc/lib
+
+
+
+-- docs.home:
+created-by: By **Priyanka**
+
+
+
+
+-- component features:
+caption title:
+optional body subtitle:
+data.feature list feature-list:
+
+
+-- lib.feature-helper: $features.title
+subtitle: $features.subtitle
+feature-list: $features.feature-list
+
+
+-- end: features

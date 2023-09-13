@@ -1,0 +1,44 @@
+-- record feature:
+caption title:
+body subtitle: 
+optional ftd.image-src icon:
+optional string link:
+
+
+
+
+
+
+
+-- feature list list-of-features:
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.images.strategy.svg
+link: landing/
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.images.strategy.svg
+link: landing/
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.images.strategy.svg
+link: landing/
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.images.strategy.svg
+link: landing/
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- end: list-of-features
+
